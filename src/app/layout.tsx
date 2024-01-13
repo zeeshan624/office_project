@@ -1,6 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Providers from './store/providers'
+import Link from 'next/link'
+import CartList from './component/cartList'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Providers>{children}</Providers></body>
     </html>
   )
 }
+// step 6 privers ko import kr ke   childeren ko ander rap kr dya 
+// ab sara store layout ke ander agaya hai ab hum pure project me easily use kr sakte hai
