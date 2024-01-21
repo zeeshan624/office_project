@@ -4,7 +4,9 @@ import { useEffect, useState } from 'react';
 let url = "http://localhost:3000/api";
 
 const getData = async () => {
-  let res = await fetch(url);
+  let res = await fetch(url,{
+    cache: "no-store",
+  });
   const data = await res.json();
   return data;
 };
@@ -18,6 +20,7 @@ interface Data {
 }
 
 export default function Show() {
+  
   const [data, setData] = useState<Data[]>([]);
 
   useEffect(() => {
