@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link";
 import ProductList from "./component/productlist";
 
 
@@ -21,7 +22,8 @@ add Post
   </button> */}
 <ProductList/>
 
-<h1 className="text-3xl "> Cart List
+<h1 className="text-3xl "> 
+<Link href={"/show"}>show detail</Link>
   </h1>
  
  
