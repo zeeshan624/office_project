@@ -1,6 +1,7 @@
 "use client"
-import CartList from "./component/cartList";
+
 import ProductList from "./component/productlist";
+
 
 
 
@@ -19,9 +20,10 @@ export default function Home() {
 add Post
   </button> */}
 <ProductList/>
+
 <h1 className="text-3xl "> Cart List
   </h1>
-  <CartList/>
+ 
  
 
    </div>
