@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react';
 
-let url = "https://office-project-lake.vercel.app/api";
+let url = "http://localhost:3000/api";
 
 const getData = async () => {
   let res = await fetch(url,{
