@@ -9,7 +9,7 @@ const ProductList = () => {
   const [material, setMaterial] = useState('');
 
   const handlePost = async () => {
-    await fetch('http://localhost:3000/api', {
+    await fetch('https://office-project-lake.vercel.app//api', {
       method: 'POST',
       body: JSON.stringify({
         id,
