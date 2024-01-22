@@ -27,7 +27,7 @@ export default function Show() {
     const fetchData = async () => {
       const res = await getData();
       setData(res);
-      console.log(res);
+    
     };
 
     fetchData();

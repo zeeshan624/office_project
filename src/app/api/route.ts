@@ -13,7 +13,7 @@ export async function GET(request: Request) {
 
 
   const user = await db.select().from(user_table2);
-  console.log("route", user);
+  // console.log("route", user);
   return NextResponse.json(user);
 }
 export async function POST(request: Request) {
@@ -39,11 +39,12 @@ export async function POST(request: Request) {
 //   return NextResponse.json("Get handle")
 // }
 
-// export async function DELETE(request: Request, {params}:{params:{id:number}}) {
-//     const id = (params.id);
+export const DELETE= async(request: Request, {params}:{params:{id:number}})=> {
+    const id = params.id;
     
-//   console.log(id);
+  // console.log(id);
   
-//     await db.delete(user_table2).where(eq(user_table2.id, id));
-//     return NextResponse.json("Get handleew")
-//   }
+   const result= await db.delete(user_table2).where(eq(user_table2.id, id))
+   .returning({id:user_table2.id});
+    return NextResponse.json({message:"Get handleew",data:result})
+  }
