@@ -38,7 +38,7 @@ export default function Show() {
       <table className="w-full border-collapse border">
         <thead>
           <tr className="bg-gray-200">
-            <th className="border p-2">ID</th>
+            <th className="border p-3">ID</th>
             <th className="border p-2">Task Description</th>
             <th className="border p-2">Location</th>
             <th className="border p-2">DTS Name</th>
