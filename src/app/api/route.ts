@@ -39,11 +39,11 @@ export async function POST(request: Request) {
 //   return NextResponse.json("Get handle")
 // }
 
-// export async function DELETE(request: Request, {params}:{params:{id:number}}) {
-//     const id = (params.id);
+export async function DELETE(request: Request, {params}:{params:{id:number}}) {
+    const id = (params.id);
     
-//   console.log(id);
+  console.log(id);
   
-//     await db.delete(user_table2).where(eq(user_table2.id, id));
-//     return NextResponse.json("Get handleew")
-//   }
+    await db.delete(user_table2).where(eq(user_table2.id, id));
+    return NextResponse.json("Get handleew")
+  }
