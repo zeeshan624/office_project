@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
 let url = "https://office-project-lake.vercel.app//api";
@@ -34,6 +35,7 @@ export default function Show() {
   }, []);
 
   return (
+    <div><button> Delete Data by ID<Link href={"/del"}></Link></button>
     <div className="max-w-screen-md mx-auto mt-8">
       <table className="w-full border-collapse border">
         <thead>
@@ -57,6 +59,8 @@ export default function Show() {
           ))}
         </tbody>
       </table>
+
+    </div>
     </div>
   );
 }
