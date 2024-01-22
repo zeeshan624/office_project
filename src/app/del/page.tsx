@@ -13,7 +13,7 @@ const Page = () => {
 
       console.log('Deleting user with ID:', id);
 
-      await fetch(`http://localhost:3000/api/task2/${id}`, {
+      await fetch(`https://office-project-lake.vercel.app/api/task2/${id}`, {
         method: 'DELETE',
         headers: {
           'Content-type': 'application/json; charset=UTF-8',
