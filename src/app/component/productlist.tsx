@@ -24,6 +24,8 @@ const ProductList = () => {
     });
   };
 
+
+
   return (
     <div>
       <div className='grid grid-cols-6 gap-3 bg-green-500'>
