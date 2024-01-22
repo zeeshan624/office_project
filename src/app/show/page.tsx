@@ -35,7 +35,7 @@ export default function Show() {
   }, []);
 
   return (
-    <div><button> Delete Data by ID<Link href={"/del"}></Link></button>
+    <div><Link href={"/del"}> Delete Data by ID</Link>
     <div className="max-w-screen-md mx-auto mt-8">
       <table className="w-full border-collapse border">
         <thead>
