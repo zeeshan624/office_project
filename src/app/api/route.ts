@@ -45,5 +45,5 @@ export async function DELETE(request: Request, {params}:{params:{id:number}}) {
   console.log(id);
   
     await db.delete(user_table2).where(eq(user_table2.id, id));
-    return NextResponse.json("Get handle")
+    return NextResponse.json("Get handlew")
   }
