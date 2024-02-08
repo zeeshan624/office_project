@@ -23,7 +23,10 @@ add Post
 <ProductList/>
 
 <h1 className="text-3xl "> 
-<Link href={"/show"}>show detail</Link>
+<Link href={"/show"} className="flex text-3xl">show detail</Link>
+<br>
+</br>
+<Link href={"/del"}className="flex text-3xl">delete data</Link>
   </h1>
  
  

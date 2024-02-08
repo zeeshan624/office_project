@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
-let url = "https://office-project-lake.vercel.app//api";
+let url = "https://office-project-lake.vercel.app/api";
 
 const getData = async () => {
   let res = await fetch(url,{
