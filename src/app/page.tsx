@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
    <div className="border-b-gray-700 back   " >
-    name=<input type="text" />
+   
     <br>
   </br>
   {/* <button onClick={()=>(updatePost({name:"Fuqan",id:111}))} >
