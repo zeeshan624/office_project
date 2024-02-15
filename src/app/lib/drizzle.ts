@@ -17,15 +17,12 @@ export const db = drizzle(sql);
 export const user_table = pgTable(
   'task',
   {
-    serial_number: serial('serial_number').primaryKey(),
+    id: serial('id').primaryKey(),
 
-    task_description: text('task_description').notNull(),
-
-    location: text('location').notNull(),
-
-    dts_name: text('dts_name').notNull(),
-
-    material: timestamp('material').defaultNow().notNull(),
+    task_description: varchar("task_description"),
+    location : varchar("location"),
+    dts_name : varchar("dts_name"),
+    material : varchar("material")
   },
 
 );
@@ -39,7 +36,8 @@ export const user_table2 = pgTable(
   task_description: varchar("task_description"),
     location : varchar("location"),
     dts_name : varchar("dts_name"),
-    material : varchar("material")
+    material : varchar("material"),
+    status: varchar("status").notNull().default('Pending')
 
 }
 

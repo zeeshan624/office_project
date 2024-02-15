@@ -21,7 +21,12 @@ const ProductList = () => {
 
   const handlePost = async () => {
     // Your fetch logic here
-    await fetch('https://office-project-lake.vercel.app/api', {
+    await
+     fetch(
+      'https://office-project-lake.vercel.app/api'
+    // "http://localhost:3000/api"
+
+     , {
       cache: 'no-cache',
       method: 'POST',
       body: JSON.stringify({

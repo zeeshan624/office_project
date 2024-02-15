@@ -11,3 +11,15 @@ export const DELETE= async(request: Request, {params}:{params:{id:number}})=> {
    .returning({id:user_table2.id});
     return NextResponse.json({message:"Get handleew",data:result})
   }
+
+  export const PUT = async(req: Request, {params}:{params:{id:number}})=> {
+    const id = params.id;
+    const body = await req.json();
+    console.log(body);
+    const result= await db.update(user_table2).set(body).where(eq(user_table2.id, id))
+    .returning({id:user_table2.id});
+    return NextResponse.json({message:"Get handleew", data:result})
+  }
+  
+
+  
